@@ -58,7 +58,6 @@ int main()
 		string grade = "F";
 	}
 
-	cout << "Hello, " << name << "!" << "You're " << age << " years old with a BMI of " << bmi << "(" << category << "), and you earned a " << grade << " on your test." 
+	cout << "Hello, " << name << "! " << "You're " << age << " years old with a BMI of " << bmi << " (" << category << "), and you earned score a " << grade << " on your test.";
 	return 0;
-
 }
