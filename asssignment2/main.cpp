@@ -33,5 +33,10 @@ int main()
 	cin >> testScore;
 	cout << endl;
 
+	double bmi = weight / (height * height); //condition if else statements for range of bmi and allat
+	int grade; //condition if else statements for range of test score and allat
+
+
+	return 0;
 
 }
