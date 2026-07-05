@@ -33,7 +33,7 @@ int main()
 	cin >> score;
 	cout << endl;
 
-	double bmi = weight / (height * height); //condition if else statements for range of bmi and allat
+	double bmi = weight / (height * height);
 	string category;
 	if (bmi >= 30) {
 		category = "Obese";
@@ -45,7 +45,7 @@ int main()
 		category = "Underweight";
 	}
 
-	
+	string grade;
 	if (score >= 90 && score <= 100) {
 		string grade = "A";
 	} else if (score >= 80 && score < 90) {
@@ -58,6 +58,7 @@ int main()
 		string grade = "F";
 	}
 
+	cout << "Hello, " << name << "!" << "You're " << age << " years old with a BMI of " << bmi << "(" << category << "), and you earned a " << grade << " on your test." 
 	return 0;
 
 }
