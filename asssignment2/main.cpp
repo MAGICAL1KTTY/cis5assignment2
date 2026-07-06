@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using std::string;
 using std::cout;
@@ -8,10 +9,10 @@ using std::endl;
 int main()
 {
 	string name;
-	int age;
-	double height;
-	double weight;
-	int score;
+	unsigned int age;
+	double height = 0;
+	double weight = 0;
+	unsigned int score;
 
 	cout << "Name? ";
 	cin >> name;
@@ -23,10 +24,18 @@ int main()
 
 	cout << "Height in meters? ";
 	cin >> height;
+	if (height < 0) {
+		cout << "Please enter a positive number for height. ";
+		cin >> height;
+	}
 	cout << endl;
 
 	cout << "Weight in kilograms? ";
 	cin >> weight;
+	if (weight < 0) {
+		cout << "Please enter a positive number for weight. ";
+		cin >> weight;
+	}
 	cout << endl;
 
 	cout << "Test score? ";
@@ -47,17 +56,17 @@ int main()
 
 	string grade;
 	if (score >= 90 && score <= 100) {
-		string grade = "A";
+		grade = "A";
 	} else if (score >= 80 && score < 90) {
-		string grade = "B";
+		grade = "B";
 	} else if (score >= 70 && score < 80) {
-		string grade = "C";
+		grade = "C";
 	} else if (score >= 60 && score < 70) {
-		string grade = "D";
+		grade = "D";
 	} else {
-		string grade = "F";
+		grade = "F";
 	}
 
-	cout << "Hello, " << name << "! " << "You're " << age << " years old with a BMI of " << bmi << " (" << category << "), and you earned score a " << grade << " on your test.";
+	cout << "Hello, " << name << "! " << "You're " << age << " years old with a BMI of " << std::fixed << std::setprecision(2) << bmi << " (" << category << "), and you scored a " << grade << " on your test.";
 	return 0;
 }
