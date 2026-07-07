@@ -1,3 +1,9 @@
+# Assignment Submission
+
+This assignment calculates the BMI and letter grade of the user before printing their name, age, BMI, and letter grade to the console.
+https://www.youtube.com/watch?v=8Yqkbu5qEpg
+
+
 # CIS_5 Assignment 2 (Winter 2026)
 
 A small C++ program that collects user information, calculates BMI (Body Mass Index), and converts a numeric test score into a letter grade.
